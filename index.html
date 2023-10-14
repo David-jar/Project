@@ -3,94 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="StyleFolder/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <title>Main Page</title>
+    <style>
+        body {
+            background: url('pictures/background.jpg');
+            background-size: cover;
+        }
+        .text{
+            background-color: rgb(95,7,40,255);
+        }
+        .images{
+            background-color:  #690000;           
+        }
+    </style>
 </head>
 <body>
-
-    <a href="Portfollio.html">Portfolio</a>
-    <hr>
-
-    <h1>Biography</h1>
-    <p>
-       
-        I'm David Jaramillo Castro im from Colombia and born in 2005, My youth started with a penchant for understanding how things work, I was hooked on unraveling the mysteries of technology from a young age.
-        In high school, my insatiable curiosity and dedication to learning led me to dive deeper into my studies, ultimately igniting my passion for programming. The fascinating world of coding opened up endless possibilities for me to shape interactive digital realms.
-        Seeking out new horizons and better opportunities, I recently embarked on an exciting journey to Canada. Currently residing in this vibrant nation, I am wholeheartedly pursuing a rewarding career in game development.
-        Beyond coding, I am driven and disciplined, pushing myself to learn and grow in this ever-evolving industry.
-    </p>    
-    <hr>
-
- 
-    <h1>Hobbies/interests</h1>
-    <ul>
-        <h2>Interests</h2>
-        <li>Music</li>
-        <li>Movies</li>
-        <li>Dancing</li>
-        <li>Drawings</li>
-    </ul>
-    <ul>
-        <h2>Hobbies</h2>
-        <li>Playing Guitar</li>
-        <li>Playing Games</li>
-        <li>Sleeping</li>
-        <li>Taking Pictures of random shoppincarts</li>
-    </ul>
-    <br>
-
-    <h1>Photos That I have Taken And Where To Find Them </h1>
-    <br>
-    <table style= "border: 1px black solid;">
-        <tr>
-            <th colspan="3" style= "border: 1px black solid;" ><h1>Pictures of random Shopping carts</h1></th>
-        </tr>
-        <tr>
-            <td style= "border: 1px black solid;">
-                <img src="pictures/ShoppingCart1.jpg" alt="A shopping cart" usemap="#cartmap1" width="600" height="600">
-                    <map name="cartmap1">
-                        <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//43.808405,-79.2652464/@43.8079995,-79.270537,16.33z/data=!4m2!4m1!3e3?entry=ttu">
-                    </map>
-            </td>
-            <td style= "border: 1px black solid;">
-                <img src="pictures/ShoppingCart3.jpg" alt="A shopping cart at night" usemap="#cartmap2" width="600" height="600" >
-                    <map name="cartmap2">
-                        <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//18+Muirlands+Dr+%2344,+Scarborough,+ON+M1V+2B4/@43.8240524,-79.3081372,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89d4d6b61e3c6147:0x6964e2eaa636273a!2m2!1d-79.2669377!2d43.8239979!3e3?entry=ttu">
-                    </map>
-            
-            </td>
-            <td style= "border: 1px black solid;">
-                <img src="pictures/ShoppingCart3.jpg" alt="A shopping cart" usemap="#cartmap3" width="600" height="600">
-                    <map name="cartmap3">
-                        <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//L.L.B.O.,+Toronto,+ON+M1V+3S8/@43.8080673,-79.3028815,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89d4d3efe6fc2017:0xeaf7042253deabab!2m2!1d-79.3027009!2d43.8118106!3e3?entry=ttu">
-                    </map>
-            </td>
-        </tr>
-
-        <tr>
-            <th colspan="3" style="border: 1px black solid;">
-                <h1>Normal Photos</h1>
-            </th>
-        </tr>
-
-        <tr>
-            <td style= "border: 1px black solid;"><img src="pictures/Mountain.JPG" alt="A mountian" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/Ocean.JPG" alt="The sea shor" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/Trees.JPG" alt="A forest" width="600" height="600"></td>
-        </tr>
-        <tr>
-            <td style= "border: 1px black solid;"><img src="pictures/TreeWithPerson.JPG" alt="A tree with a person on it" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/Vally.JPG" alt="A valley" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/WaterStream.JPG" alt="A water stream" width="600" height="600"></td>
-        </tr>
-        <tr>
-            <td style= "border: 1px black solid;"><img src="pictures/Anteater.jpg" alt="Girl in a jacket" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/Alligator.jpg" alt="Girl in a jacket" width="600" height="600"></td>
-            <td style= "border: 1px black solid;"><img src="pictures/Flamingos.jpg" alt="Girl in a jacket" width="600" height="600"></td>
-        </tr>
-    </table>
-
-   <a href="#top">
-        Back to the top 
-   </a>
+    <a href="Portfollio.html" class="buttons">Portfolio</a>
+    <div class="text">
+        <hr>   
+        <h1 id="centered_h1">Biography</h1>
+        <p class="about_me" style="color: rgb(219, 196, 156);">
+            I'm David Jaramillo Castro im from Colombia and born in 2005, My youth started with a penchant for understanding how things work, I was hooked on unraveling the mysteries of technology from a young age.
+            In high school, my insatiable curiosity and dedication to learning led me to dive deeper into my studies, ultimately igniting my passion for programming. The fascinating world of coding opened up endless possibilities for me to shape interactive digital realms.
+            Seeking out new horizons and better opportunities, I recently embarked on an exciting journey to Canada. Currently residing in this vibrant nation, I am wholeheartedly pursuing a rewarding career in game development.
+            Beyond coding, I am driven and disciplined, pushing myself to learn and grow in this ever-evolving industry.
+        </p> 
+        <hr>
+        <h1>Hobbies/interests</h1>
+        <ul class="list" class="about_me">
+            <h2>Interests</h2>
+            <li>Music</li>
+            <li>Movies</li>
+            <li>Dancing</li>
+            <li>Drawings</li>
+        </ul>
+        <ul class="list" class="about_me">
+            <h2>Hobbies</h2>
+            <li>Playing Guitar</li>
+            <li>Playing Games</li>
+            <li>Sleeping</li>
+            <li>Taking Pictures of random shoppincarts</li>
+        </ul>
+        <br>
+    </div>     
+    <div class="images">
+        <h1>Photos That I have Taken And Where To Find Them </h1>
+        <br>
+        <table style= "border: 1px white solid;">
+            <tr>
+                <th colspan="3" style= "border: 1px white solid;" ><h1>Pictures of random Shopping carts</h1></th>
+            </tr>
+            <tr>
+                <td style= "border: 1px white solid;">
+                    <img src="pictures/ShoppingCart1.jpg" alt="A shopping cart" usemap="#cartmap1" width="600" height="600" class="photo">
+                        <map name="cartmap1">
+                            <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//43.808405,-79.2652464/@43.8079995,-79.270537,16.33z/data=!4m2!4m1!3e3?entry=ttu">
+                        </map>
+                </td>
+                <td style= "border: 1px white solid;">
+                    <img src="pictures/ShoppingCart2.jpg" alt="A shopping cart at night" usemap="#cartmap2" width="600" height="600" class="photo" >
+                        <map name="cartmap2">
+                            <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//18+Muirlands+Dr+%2344,+Scarborough,+ON+M1V+2B4/@43.8240524,-79.3081372,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x89d4d6b61e3c6147:0x6964e2eaa636273a!2m2!1d-79.2669377!2d43.8239979!3e3?entry=ttu">
+                        </map>
+                </td>
+                <td style= "border: 1px white solid;">
+                    <img src="pictures/ShoppingCart3.jpg" alt="A shopping cart" usemap="#cartmap3" width="600" height="600" class="photo">
+                        <map name="cartmap3">
+                            <area shape="rect" coords="34,44,270,350" alt="Shopping cart location" href="https://www.google.com/maps/dir//L.L.B.O.,+Toronto,+ON+M1V+3S8/@43.8080673,-79.3028815,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x89d4d3efe6fc2017:0xeaf7042253deabab!2m2!1d-79.3027009!2d43.8118106!3e3?entry=ttu">
+                        </map>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="3" style="border: 1px white solid;">
+                    <h1>Normal Photos</h1>
+                </th>
+            </tr>
+            <tr>
+                <td style= "border: 1px white solid;"><img src="pictures/Mountain.JPG" alt="A mountian" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/Ocean.JPG" alt="The sea shor" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/Trees.JPG" alt="A forest" width="600" height="600"></td>
+            </tr>
+            <tr>
+                <td style= "border: 1px white solid;"><img src="pictures/TreeWithPerson.JPG" alt="A tree with a person on it" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/Vally.JPG" alt="A valley" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/WaterStream.JPG" alt="A water stream" width="600" height="600"></td>
+            </tr>
+            <tr>
+                <td style= "border: 1px white solid;"><img src="pictures/Anteater.jpg" alt="Girl in a jacket" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/Alligator.jpg" alt="Girl in a jacket" width="600" height="600"></td>
+                <td style= "border: 1px white solid;"><img src="pictures/Flamingos.jpg" alt="Girl in a jacket" width="600" height="600"></td>
+            </tr>
+        </table>
+    </div>
+   <a href="#top" class="buttons">Back to the top </a>
 </body>
 </html>
